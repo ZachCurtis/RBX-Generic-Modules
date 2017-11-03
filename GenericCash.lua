@@ -9,23 +9,16 @@ end
 
 -- API code
 function CashBank:CheckBalance(player)
-    print(_G.cash[player])
+    	print(_G.cash[player])
 	return _G.cash[player]
 end
 
 function CashBank:AddCash(player,cashToAdd)
-    _G.cash[player] = _G.cash[player] + cashToAdd
+    	_G.cash[player] = _G.cash[player] + cashToAdd
 end
 
 function CashBank:AddPlayer(player,loadData)
-	if loadData then
-		--loadData coming from datastore
-		_G.cash[player] = {}
-		_G.cash[player] = loadData
-	else
-		_G.cash[player] = starterCash
-	end
-	
+	_G.cash[player] = loadData or starterCash
 end
 
 function CashBank:RemovePlayer(player)
@@ -33,11 +26,7 @@ function CashBank:RemovePlayer(player)
 end
 
 function CashBank:CheckPurchase(player, cost)
-	if _G.cash[player] >= cost then
-		return true
-	else
-		return false
-	end
+	return _G.cash[player] >= cost and true or false
 end
 
 function CashBank:SpendCash(player,cost)
