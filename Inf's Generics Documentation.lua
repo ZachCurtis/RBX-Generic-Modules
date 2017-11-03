@@ -1,7 +1,6 @@
 --[[
 November 2017
 InfinityDesign's generic module scripts Ver 1.0
-Special thanks to all contributers: 
 	
 Contains:
 
