@@ -8,7 +8,7 @@ Contains:
 	Server -
 	GenericCash !           	- simple money system
 	GenericSkills !				- simple RPG inspired skill system with character effects.
-	GenericLevels ~             - simple infinite level/experience system with dynamically calculated levels.
+	GenericLevels !             - simple infinite level/experience system with dynamically calculated levels.
 	GenericInventory !			- lightweight inventory with basic functions
 	GenericScopingDatastore 	- easy to use datastore methods based on player scoping
 	AdvancedInventory !         - inventory with duplicate item support as well as item complexity
