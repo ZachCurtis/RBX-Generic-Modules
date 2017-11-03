@@ -1,12 +1,14 @@
 --[[
 November 2017
 InfinityDesign's generic module scripts Ver 1.0
+
 	
 Contains:
 
 	Server -
 	GenericCash !           	- simple money system
 	GenericSkills !				- simple RPG inspired skill system with character effects.
+	GenericLevels ~             - simple infinite level/experience system with dynamically calculated levels.
 	GenericInventory !			- lightweight inventory with basic functions
 	GenericScopingDatastore 	- easy to use datastore methods based on player scoping
 	AdvancedInventory !         - inventory with duplicate item support as well as item complexity
@@ -49,7 +51,7 @@ API:
 		GenericCash:RemovePlayer(player)       - Cleans up table.
 		
 	GenericSkills:
-		GenericSkills:AddPlayer(player, loadData)                   - creates index for player. all skills level 1 if loadData not provided
+		GenericSkills:AddPlayer(player, loadData) 	 	            - creates index for player. all skills level 1 if loadData not provided
 		GenericSkills:GetAllSkills(player)           	            - gets a table of skills. table structure is outlined internally.
 		GenericSkills:GetSkillLevel(player, skillEnum)              - get a single skill level with a provided skillEnum integer (see below for enum list)
 		GenericSkills:AddSkillLevel(player, skillEnum, levelsToAdd) - Adds levels to skill enum. 
