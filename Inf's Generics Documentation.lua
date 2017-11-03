@@ -49,7 +49,7 @@ API:
 		GenericCash:RemovePlayer(player)       - Cleans up table.
 		
 	GenericSkills:
-		GenericSkills:AddPlayer(player, loadData) 	 	            - creates index for player. all skills level 1 if loadData not provided
+		GenericSkills:AddPlayer(player, loadData)                   - creates index for player. all skills level 1 if loadData not provided
 		GenericSkills:GetAllSkills(player)           	            - gets a table of skills. table structure is outlined internally.
 		GenericSkills:GetSkillLevel(player, skillEnum)              - get a single skill level with a provided skillEnum integer (see below for enum list)
 		GenericSkills:AddSkillLevel(player, skillEnum, levelsToAdd) - Adds levels to skill enum. 
