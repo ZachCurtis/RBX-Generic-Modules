@@ -1,5 +1,5 @@
 local AdvancedInv = {}
-local invSource = require(script.Parent.AdvInvSource)
+local invSource = require(script.AdvInvSource)
 
 local sourceList = invSource:GetSource()
 
@@ -28,6 +28,10 @@ end
 
 function AdvancedInv:AddItem(player, itemId)
 	if itemId == sourceList[itemId][1] and _G.advancedInv[player] then --cross refrence to ensure index matches id
+		if sourceList[itemId][6] == false then
+			local check = self:CheckIfOwned(player, itemId)
+			return false
+		end
 		table.insert(_G.advancedInv[player], itemId)
 		return true
 	else
