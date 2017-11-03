@@ -1,1 +1,2 @@
-Documentation was formatted in a roblox script. It will later be migrated to markdown once the modules are updated. You can find all scripts as well as documentation here: https://www.roblox.com/library/1148128485/InfinityDesigns-Generic-Modulescripts
+Documentation was formatted in a roblox script. It will later be migrated to markdown once the modules are updated. 
+You can find all scripts as well as documentation here: https://www.roblox.com/library/1148128485/InfinityDesigns-Generic-Modulescripts
